@@ -29,7 +29,7 @@ public class Party extends Organization implements Contactable {
     public List<Election> getFairElections() {
         List<Election> fairElections = new ArrayList<>();
         for (Election e : elections) {
-            if (e.isFair()) { // Assuming there's a method isFair() in the Election class
+            if (e.isFair()) {
                 fairElections.add(e);
             }
         }
